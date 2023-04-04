@@ -7,22 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       fontFamily: {
         // burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
       },
+      
       colors: {
         bg_all: '#1F2945',
-        
-      },
-      
+      }, 
+
     },
   },
 
   plugins: [
     require('tailwind-scrollbar')
   ],
+
   variants: {
     scrollbar: ['dark']
-}
+  }
+
 };
