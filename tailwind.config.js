@@ -14,8 +14,15 @@ module.exports = {
       colors: {
         bg_all: '#1F2945',
         
-      }
+      },
+      
     },
   },
-  plugins: [],
+
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
+  variants: {
+    scrollbar: ['dark']
+}
 };
