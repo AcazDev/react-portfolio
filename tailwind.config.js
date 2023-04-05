@@ -36,7 +36,8 @@ module.exports = {
   },
 
   plugins: [
-    require ('@gradin/tailwindcss-scrollbar')
+    require ('@gradin/tailwindcss-scrollbar'),
+    ('@tailwindcss/forms'),
     // ({
     //   size: '10px',
     //   track: {
