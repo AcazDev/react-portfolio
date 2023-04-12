@@ -19,14 +19,17 @@ module.exports = {
 
       scrollbar: theme => ({
         DEFAULT: {
-          size: theme('spacing.2'),
+          size: theme('spacing.3'),
           track: {
+            // margin: '10px',
             background: theme('colors.bg_all'),
           },
+
           thumb: {
             background: theme('colors.red.500'),
             borderRadius: '10px',
           },
+
           hover: {
             background: theme('colors.amber.500'),
           },

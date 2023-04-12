@@ -10,6 +10,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+--charmander: linear-gradient(180deg, #EF4444 0%, #F59E0B 100%);
+--squirtle: linear-gradient(180.03deg, #3360FF -7.22%, #B4FCE2 102.31%);
+--bulbasaur: linear-gradient(180deg, #4BDF3E 0%, #59FFC3 100%);;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -18,7 +24,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 #contato {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
