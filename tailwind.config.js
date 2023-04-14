@@ -21,7 +21,7 @@ module.exports = {
         DEFAULT: {
           size: theme('spacing.3'),
           track: {
-            // margin: '10px',
+         
             background: theme('colors.bg_all'),
           },
 

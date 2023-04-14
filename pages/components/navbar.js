@@ -3,13 +3,14 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from "next/image";
 import acazIcon from "/public/acazIcon.svg"
+import { NavLink } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Sobre mim', href: '#', current: false },
-  { name: 'Design', href: '#', current: false },
-  { name: 'Dev', href: '#', current: false },
-  { name: 'Ilustração', href: '#', current: false },
+  { name: 'Inicio', href: '/home' },
+  { name: 'Sobre mim', href: '#'},
+  { name: 'Design', href: '#' },
+  { name: 'Dev', href: '/dev' },
+  { name: 'Ilustração', href: '/ilustracao' },
 ]
 
 function classNames(...classes) {
@@ -53,15 +54,19 @@ export default function Navbar() {
                 <div className="hidden sm:ml-16 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <a //NavLink
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         id="navigation_bar"
                         className={classNames(
                           item.current ? 'bg-gray-900 anim text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-semibold tracking-wide',
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        // className={({isActive}) =>{
+                        //   return (
+                        //     '' + (!isActive ? '' : '')
+                        //   );
+                        // }}
                       >
                         {item.name}
                       </a>
@@ -86,6 +91,7 @@ export default function Navbar() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
+                  
                 </Disclosure.Button>
               ))}
             </div>
