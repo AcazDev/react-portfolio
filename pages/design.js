@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Navbar from "../pages/components/navbar";
 import Contact from "../pages/components/contact"
+import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { Fragment, useState } from "react";
 import Image from "next/image";
@@ -61,7 +62,7 @@ export default function Home() {
             <div className="px-8 mx-auto" >
               {/* <h1 className="font-burtons text-xl dark:text-gray-100 mb-8">developedbyed</h1> */}
               <h2 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">
-                Alessandro Azevedo
+                DESIGN
               </h2>
 
               <h3 className="text-2xl pt-8 pb-4 dark:text-gray-100 md:text-3xl">

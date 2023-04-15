@@ -1,8 +1,20 @@
 import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+function App({Component, pageProps}) {
+  return <>
+  <Component {...pageProps} />
+ 
+    </>
+  
 }
+
+export default App;
+// import '@/styles/globals.css'
+
+// export default function App({ Component, pageProps }) {
+//   return <Component {...pageProps} />
+// }
 
 // import '@/styles/globals.css'
 // import Navbar from './components/navbar' 

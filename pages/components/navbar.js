@@ -1,24 +1,29 @@
-import { Fragment } from 'react'
+import React from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from "next/image";
 import acazIcon from "/public/acazIcon.svg"
-import { NavLink } from 'react-router-dom';
+
 
 const navigation = [
-  { name: 'Inicio', href: '/home' },
-  { name: 'Sobre mim', href: '#'},
-  { name: 'Design', href: '#' },
-  { name: 'Dev', href: '/dev' },
-  { name: 'Ilustração', href: '/ilustracao' },
+  { name: 'Inicio', href: '/home',current: false},
+  { name: 'Sobre mim', href: '/sobre-mim', current: false },
+  { name: 'Design', href: '/design', current: false},
+  { name: 'Dev', href: '/dev', current: false},
+  { name: 'Ilustração', href: '/ilustration', current: false },
+  
 ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
-  return (
+// export default function Navbar() {
+//   return (
+  const Navbar = () => {
+    return (
+      <>
+        <div className="min-h-full">
     <Disclosure as="nav" className="bg-gradient-to-b from-gray-900 rounded-lg">
       {({ open }) => (
         <>
@@ -53,51 +58,51 @@ export default function Navbar() {
                 </div>  
                 <div className="hidden sm:ml-16 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a //NavLink
-                        key={item.name}
-                        to={item.href}
-                        id="navigation_bar"
-                        className={classNames(
-                          item.current ? 'bg-gray-900 anim text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-semibold tracking-wide',
-                        )}
-                        // className={({isActive}) =>{
-                        //   return (
-                        //     '' + (!isActive ? '' : '')
-                        //   );
-                        // }}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                  {navigation.map((item) => (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-semibold tracking-wide'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                  
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+          <Disclosure.Panel className="md:hidden">
+                <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                  {navigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'block px-3 py-2 rounded-md text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+      </div>
+    </>
   )
 }
+
+export default Navbar
