@@ -8,6 +8,7 @@ import { Fragment, useState } from "react";
 import Image from "next/image";
 import avataracaz from "/public/avatar-acaz.png";
 import acazIcon from "/public/acazIcon.svg"
+import arrowLogoAcaz from "/public/arrowLogoAcaz.svg"
 
 import projects from "/public/projects/project.png";
 import ai from "/public/ai.png"
@@ -40,7 +41,7 @@ export default function Home() {
           <section> {/* className="min-h-screen" */}
             <nav className="py-10 dark:text-white">
 
-              <Navbar/>
+              <Navbar />
 
               <button className="block w-auto lg:hidden p-16 pb-0 absolute top-0 right-0">
                 <BsFillMoonStarsFill
@@ -61,8 +62,8 @@ export default function Home() {
           <div className="text-start py-12 flex mx-auto">
             <div className="px-8 mx-auto" >
               {/* <h1 className="font-burtons text-xl dark:text-gray-100 mb-8">developedbyed</h1> */}
-              <h2 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">
-                DEV
+              <h2 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-lime-500 to-emerald-300 md:text-6xl pb-4">
+                Desenvolvedor Front End
               </h2>
 
               <h3 className="text-2xl pt-8 pb-4 dark:text-gray-100 md:text-3xl">
@@ -92,99 +93,26 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <svg className="animate-bounce w-6 h-6 ...">
-          </svg> */}
-          <section className="text-gray-600 body-font">
-            <div className="container px-5 py-8 mx-auto mb-12">
-              <div className="flex flex-col text-start w-full mb-12 mx-auto">
-                <h1 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">Projetos</h1>
-                {/* <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100 md:text-xl">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p> */}
-              </div>
-              <div className="flex flex-wrap -m-4">
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={0} height={0} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
-                  </div>
-                </div>
 
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={0} height={0} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
-                  </div>
-                </div>
 
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={0} height={0} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
+          {/* container */}
+          <section className="overflow-hidden">
+            <div className="container px-5 py-24 mx-auto">
+                {/* DEV */}
+                <div className="p-12 flex items-center flex-col font-poppins tracking-wide">
+                  <div className="flex mr-24 mb-8">
+                    <Image className="-translate-y-2.5 mr-8" width={70} height={70} src={arrowLogoAcaz} alt="arrow logo" />
+                    <h2 className="font-bold text-8xl text-amber-500 md:text-6xl pb-4">Desenvolvedor</h2>
                   </div>
+                  <p className="text-md text-gray-800 dark:text-gray-200 max-w-2xl md:text-xl bg-gradient-to-b from-gray-900 rounded-lg p-8">
+                    Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.</p>
                 </div>
-
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={0} height={0} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={0} height={0} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="lg:w-1/3 sm:w-1/2 p-4">
-                  <p className="title-font text-2xl text-gray-300">Projeto</p>
-                  <p className="title-font text-lg text-gray-300 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                  <div className="flex relative">
-                    <Image alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={projects} width={606} height={366} />
-                    <a href="#" className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-                      <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
 
-        {/* Design */}
+          {/* Design e dev */}
           <section className="text-gray-600 body-font">
-          <h2 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">Design e Dev</h2>
+            <h2 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">Design e Dev</h2>
             <div className="container px-5 py-8 mx-auto">
               <div className="flex flex-wrap -m-4">
 
@@ -193,13 +121,13 @@ export default function Home() {
                     <h1 className="text-3xl title-font font-poppins text-gray-300 mb-4 text-start">Software Web e Design</h1>
                     <p className="leading-relaxed font-poppins text-gray-300 text-lg  mb-6">Programas que utilizo no dia a dia para contrução de design, ilustração e Web.</p>
                     <a className="flex items-center w-16">
-                      <Image className="m-2" src={ai} alt="ai"/>
+                      <Image className="m-2" src={ai} alt="ai" />
                       <Image className="m-2" src={psd} alt="psd" />
                       <Image className="m-2" src={figma} alt="figma" />
                       <Image className="m-2" src={flutter} alt="flutter" />
                     </a>
                     <a className="flex items-center">
-                      <Image className="m-2" src={bootstrap} alt="bootstrap" width={68}/>
+                      <Image className="m-2" src={bootstrap} alt="bootstrap" width={68} />
                     </a>
                   </div>
                 </div>
@@ -209,13 +137,13 @@ export default function Home() {
                     <h1 className="text-3xl title-font font-poppins text-gray-300 mb-4 text-start">Frameworks</h1>
                     <p className="leading-relaxed font-poppins text-gray-300 text-lg  mb-6">Frameworks atuais que ja trabalhei e estudo no dia a dia. </p>
                     <a className="flex items-center w-16">
-                      <Image className="m-2" src={angular} alt="angular"/>
+                      <Image className="m-2" src={angular} alt="angular" />
                       <Image className="m-2" src={react} alt="react" />
                       <Image className="m-2" src={html} alt="html" />
                       <Image className="m-2" src={css} alt="css" />
                     </a>
                     <a className="flex items-center">
-                      <Image className="m-2" src={js} alt="js" width={68}/>
+                      <Image className="m-2" src={js} alt="js" width={68} />
                     </a>
                   </div>
                 </div>

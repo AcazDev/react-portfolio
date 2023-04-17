@@ -14,8 +14,14 @@ module.exports = {
       
       colors: {
         bg_all: '#1F2945',
+
+        testeColor: '#B4FCE2'
+        
       }, 
       
+      backgroundImage: (theme) => ({
+        'charmander': `linear-gradient(to bottom, ${theme('colors.pink')}, ${theme('colors.orange')})`,
+      }),
 
       scrollbar: theme => ({
         DEFAULT: {
