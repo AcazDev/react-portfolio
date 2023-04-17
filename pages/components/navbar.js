@@ -18,10 +18,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-// export default function Navbar() {
-//   return (
-  const Navbar = () => {
-    return (
+export default function Navbar() {
+  return (
+  // const Navbar = () => {
+  //   return (
       <>
         <div className="min-h-full">
     <Disclosure as="nav" className="bg-gradient-to-b from-gray-900 rounded-lg">
@@ -105,4 +105,4 @@ function classNames(...classes) {
   )
 }
 
-export default Navbar
+// export default Navbar
