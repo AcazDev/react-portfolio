@@ -41,6 +41,7 @@ module.exports = {
   plugins: [
     require ('@gradin/tailwindcss-scrollbar'),
     ('@tailwindcss/forms'),
+    ("react-html-attrs")
     // ({
     //   size: '10px',
     //   track: {
