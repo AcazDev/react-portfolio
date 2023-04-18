@@ -92,49 +92,33 @@ export default function Home() {
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
                 <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
               </div>
-              <div className="flex flex-wrap md:-m-2 -m-1">
+              {/* ILLUSTRATIONS GROUP-1*/}
+              <div className="flex flex-wrap md:-m-2 -m-1 dark:bg-gradient-to-b from-gray-900 rounded-lg">
                 <div className="flex flex-wrap w-1/2">
-                  <div className="md:p-2 p-1 w-1/2">
+                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full object-cover h-full object-center block" src={kaisa} />
                   </div>
-                  <div className="md:p-2 p-1 w-1/2">
+                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full object-cover h-full object-center block" src={prof} />
                   </div>
-                  <div className="md:p-2 p-1 w-full">
+                  <div className="md:p-2 p-1 w-full hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full h-full object-cover object-center block" src={robotnik} />
                   </div>
                 </div>
-                <div className="flex flex-wrap w-1/2">
-                  <div className="md:p-2 p-1 w-full">
+                <div className="flex flex-wrap w-1/2 ">
+                  <div className="md:p-2 p-1 w-full hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full h-full object-cover object-center block" src={ElGatone} />
                   </div>
-                  <div className="md:p-2 p-1 w-1/2">
+                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full object-cover h-full object-center block" src={nkfemale} />
                   </div>
-                  <div className="md:p-2 p-1 w-1/2">
+                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
                     <Image alt="gallery" className="w-full object-cover h-full object-center block" src={briggs} />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
-          {/* container */}
-          <section className="overflow-hidden">
-            <div className="container px-5 py-24 mx-auto">
-              {/* DEV */}
-              <div className="p-12 flex items-center flex-col font-poppins tracking-wide">
-                <div className="flex mr-24 mb-8">
-                  <Image className="-translate-y-2.5 mr-8" width={70} height={70} src={arrowLogoAcaz} alt="arrow logo" />
-                  <h2 className="font-bold text-8xl text-amber-500 md:text-6xl pb-4">Desenvolvedor</h2>
-                </div>
-                <p className="text-md text-gray-800 dark:text-gray-200 max-w-2xl md:text-xl bg-gradient-to-b from-gray-900 rounded-lg p-8">
-                  Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.</p>
-              </div>
-            </div>
-          </section>
-
-
         </main>
         <Contact isVisible={showContact}
           onClose={() => setShowContact(false)}>
