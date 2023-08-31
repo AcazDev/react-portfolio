@@ -19,6 +19,7 @@
     "react-icons": "^4.8.0",
     "react-photo-album": "^2.0.4",
     "react-router-dom": "^6.10.0",
+    "reactstrap": "^9.2.0",
     "sharp": "^0.32.0",
     "yet-another-react-lightbox": "^3.4.0"
   },

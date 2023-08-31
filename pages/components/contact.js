@@ -37,7 +37,7 @@ const contact = ({isVisible, onClose, children}) => {
           {children}
         </div>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-bg_all sm:text-4xl">Contact sales</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-bg_all sm:text-4xl">Entrar em Contato</h2>
           <p className="mt-2 mx-4 text-lg leading-8 text-gray-600">
             Preencha os campos e envie sua duvida.
           </p>

@@ -97,8 +97,10 @@ export default function Home() {
           <section className="text-gray-600 body-font">
             <div className="container px-5 py-8 mx-auto mb-12">
               <div className="flex flex-col text-start w-full mb-12 mx-auto">
-                <h1 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">Projetos</h1>
-                {/* <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100 md:text-xl">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p> */}
+                <h1 className="font-bold text-transparent text-8xl bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 md:text-6xl pb-4">Projetos
+                <Image className="m-2" src={figma} alt="figma" />
+                </h1>
+                <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100 md:text-xl">Veja os projetos no qual ja trabalhei e ainda trabalho como designer e desenvolvedor junior.</p>
               </div>
               <div className="flex flex-wrap -m-4">
                 <div className="lg:w-1/3 sm:w-1/2 p-4">
