@@ -1,58 +1,39 @@
-
-import robotnik from "/public/gallery-ilustration/robotnik.jpg";
-import kaisa from "/public/gallery-ilustration/kaisa.jpg";
-import prof from "/public/gallery-ilustration/prof.jpg";
-import briggs from "/public/gallery-ilustration/briggs.jpg";
-import ElGatone from "/public/gallery-ilustration/ElGatone.jpg";
-import nkfemale from "/public/gallery-ilustration/nkFemale.jpg";
-
 const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
 
-const unsplashLink = (id: string, width: number, height: number) =>
-    `https://source.unsplash.com/${id}/${width}x${height}`;
+const drivePhotos = [
+    { id: "1ilhCB2Z2PVDkhD8OEBKhjJiOWierTTo1", width: 1080, height: 640, alt:"Robotnik" },
+    { id: "1xAU2VNiatABcr8vMxBJ3OqVMcNV3NWNP", width: 1080, height: 1620, alt:"Prof" },
+    { id: "1gyllI8OH4SuKXyXr6VhcVsRdHtfgGtx5", width: 1080, height: 640, alt:"Person Nokato" },
 
-const unsplashPhotos = [
+    { id: "1dlV8Bueg8z7wsJPtRiOIYTcqP6kDPI_x", width: 1080, height: 1540, alt:"Sara NK" },
+    { id: "1xCklL0ctsC1YV62iN6OL7mvespPlbLuw", width: 1080, height: 1540, alt:"My'zix" },
+    { id: "1sCCfrA4A6FfKRpL243buXlR8PUg_nho2", width: 1080, height: 1140, alt:"Kaisa" },
+    { id: "1DZKa6HY0xYLx1zGGhg5cAz5C_90CfYmj", width: 1080, height: 1180, alt:"Joker-filme" },
 
-    { id: "Osq7UAVxIOI", width: 1080, height: 780 },
-    { id: "Dhmn6ete6g8", width: 1080, height: 1620 },
-    { id: "RkBTPqPEGDo", width: 1080, height: 720 },
-    { id: "Yizrl9N_eDA", width: 1080, height: 721 },
-    { id: "KG3TyFi0iTU", width: 1080, height: 1620 },
-    { id: "Jztmx9yqjBw", width: 1080, height: 607 },
-    { id: "-heLWtuAN3c", width: 1080, height: 608 },
-    { id: "xOigCUcFdA8", width: 1080, height: 720 },
-    { id: "1azAjl8FTnU", width: 1080, height: 1549 },
-    { id: "ALrCdq-ui_Q", width: 1080, height: 720 },
-    { id: "twukN12EN7c", width: 1080, height: 694 },
-    { id: "9UjEyzA6pP4", width: 1080, height: 1620 },
-    { id: "sEXGgun3ZiE", width: 1080, height: 720 },
-    { id: "S-cdwrx-YuQ", width: 1080, height: 1440 },
-    { id: "q-motCAvPBM", width: 1080, height: 1620 },
-    { id: "Xn4L310ztMU", width: 1080, height: 810 },
-    { id: "iMchCC-3_fE", width: 1080, height: 610 },
-    { id: "X48pUOPKf7A", width: 1080, height: 160 },
-    { id: "GbLS6YVXj0U", width: 1080, height: 810 },
-    { id: "9CRd1J1rEOM", width: 1080, height: 720 },
-    { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
+    { id: "1DlBt-F7eV7lY91yE50kQWXZU28nqlolJ", width: 1080, height: 694, alt:"hollow-knight" },
+    { id: "10KYBaQkhZ2BdQEs8HyHT78jsP6JO7_Yj", width: 1080, height: 1180, alt:"Elijhia NK" },
+    { id: "1sQrAP6a4av3qAYPcJBjLzasXaaE0jn2u", width: 1080, height: 720, alt:"El-Gatone" },
+    { id: "1HwHlIvlGS_t4M3OEb9oZCbY953lNMvW2", width: 1080, height: 640, alt:"Briggs" },
 ];
 
-const photos = unsplashPhotos.map((photo) => {
+const photos = drivePhotos.map((photo) => {
     const width = breakpoints[0];
     const height = (photo.height / photo.width) * width;
 
     return {
-        src: unsplashLink(photo.id, width, height),
+        src: `https://drive.google.com/uc?export=view&id=${photo.id}`,
         width,
         height,
         images: breakpoints.map((breakpoint) => {
             const height = Math.round((photo.height / photo.width) * breakpoint);
             return {
-                src: unsplashLink(photo.id, breakpoint, height),
+                src: `https://drive.google.com/uc?export=view&id=${photo.id}`,
                 width: breakpoint,
                 height,
             };
         }),
     };
+    
 });
 
 export default photos;

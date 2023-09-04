@@ -30,16 +30,16 @@ export default function Slides() {
 
     return (
         <>
-            <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+            <PhotoAlbum photos={photos} layout="rows" targetRowHeight={300} onClick={({ index }) => setIndex(index)} />
 
             <Lightbox
                 slides={slides}
                 open={index >= 0}
                 index={index}
                 close={() => setIndex(-1)}
-                // enable optional lightbox plugins
                 plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
             />
         </>
     );
+    
 }

@@ -12,15 +12,6 @@ import arrowLogoAcaz from "/public/arrowLogoAcaz.svg"
 
 import Gallery from "./components/gallery.jsx"
 
-import robotnik from "/public/gallery-ilustration/robotnik.jpg";
-import kaisa from "/public/gallery-ilustration/kaisa.jpg";
-import prof from "/public/gallery-ilustration/prof.jpg";
-import briggs from "/public/gallery-ilustration/briggs.jpg";
-import ElGatone from "/public/gallery-ilustration/ElGatone.jpg";
-import nkfemale from "/public/gallery-ilustration/nkFemale.jpg";
-
-
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [showContact, setShowContact] = useState(false);
@@ -66,11 +57,11 @@ export default function Home() {
               <h3 className="text-2xl pt-8 pb-4 dark:text-gray-100 md:text-3xl font-poppins">
                 Descrição sobre minhas ilustrações
               </h3>
-              {/* <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100 max-w-xl md:text-xl">
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-100 max-w-xl md:text-xl">
                 Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                 it to make a type specimen book.
-              </p> */}
+              </p>
 
               <button id="contato" className="bg-gradient-to-b from-red-500 to-amber-500 rounded-full
                text-white text-2xl font-semibold px-8 py-2.5 mt-16 mr-0 mb ml-40"
@@ -85,43 +76,13 @@ export default function Home() {
             </div>
           </div>
 
-<Gallery />
+          <div className="pb-10">
+            <Gallery/>  {/* galeria de Imagens */}
+          </div>
 
-          {/* GALLERY */}
-          {/* <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto flex flex-wrap">
-              <div className="flex w-full mb-20 flex-wrap">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
-                <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
-              </div> */}
-              {/* ILLUSTRATIONS GROUP-1*/}
-              {/* <div className="flex flex-wrap md:-m-2 -m-1 dark:bg-gradient-to-b from-gray-900 rounded-lg">
-                <div className="flex flex-wrap w-1/2">
-                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full object-cover h-full object-center block" src={kaisa} />
-                  </div>
-                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full object-cover h-full object-center block" src={prof} />
-                  </div>
-                  <div className="md:p-2 p-1 w-full hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full h-full object-cover object-center block" src={robotnik} />
-                  </div>
-                </div>
-                <div className="flex flex-wrap w-1/2 ">
-                  <div className="md:p-2 p-1 w-full hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full h-full object-cover object-center block" src={ElGatone} />
-                  </div>
-                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full object-cover h-full object-center block" src={nkfemale} />
-                  </div>
-                  <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition duration-300">
-                    <Image alt="gallery" className="w-full object-cover h-full object-center block" src={briggs} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
         </main>
+
+        {/* Footer */}
         <Contact isVisible={showContact}
           onClose={() => setShowContact(false)}>
         </Contact>
@@ -138,7 +99,7 @@ export default function Home() {
             <p className="text-gray-400 text-2xl mb-1 ml-8"> | </p>
           </a>
           <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-900 sm:py-2 sm:mt-0 mt-4">© 2023 Designed and Developed by Alessandro Azevedo —
-            <a href="https://twitter.com/knyttneve" className="font-bold text-transparent text-xs bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 ml-1" rel="noopener noreferrer" target="_blank">@ACAZ</a>
+            <a href="https://twitter.com/ACAZ_DEV" className="font-bold text-transparent text-xs bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 ml-1" rel="noopener noreferrer" target="_blank">@ACAZ_DEV</a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-400">

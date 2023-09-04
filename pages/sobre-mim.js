@@ -178,7 +178,7 @@ export default function Home() {
             <p className="text-gray-400 text-2xl mb-1 ml-8"> | </p>
           </a>
           <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-900 sm:py-2 sm:mt-0 mt-4">© 2023 Designed and Developed by Alessandro Azevedo —
-            <a href="https://twitter.com/knyttneve" className="font-bold text-transparent text-xs bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 ml-1" rel="noopener noreferrer" target="_blank">@ACAZ</a>
+            <a href="https://twitter.com/ACAZ_DEV" className="font-bold text-transparent text-xs bg-clip-text bg-gradient-to-b from-red-500 to-amber-500 ml-1" rel="noopener noreferrer" target="_blank">@ACAZ_DEV</a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-400">
