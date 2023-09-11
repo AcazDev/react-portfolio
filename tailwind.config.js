@@ -14,9 +14,7 @@ module.exports = {
       
       colors: {
         bg_all: '#1F2945',
-
-        testeColor: '#B4FCE2'
-        
+        testeColor: '#B4FCE2' 
       }, 
       
       backgroundImage: (theme) => ({
