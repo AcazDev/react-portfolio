@@ -22,6 +22,7 @@ export default function Home() {
           <title>Ilustrações</title>
           <meta name="description" content="Acaz" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        
         </Head>
 
         <main className=" bg-white px-10 dark:bg-bg_all md:px-20 lg:px-40">

@@ -4,6 +4,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import acazIcon from '/public/acazIcon.svg';
+import coinInfo from '/public/coinInfo.gif';
+
+// import localFont from 'next/font/local'
+
+// const mainFontFamily = localFont ({
+//   src: '/public/font/SnesFont.woff'
+// })
 
 const navigation = [
   { name: 'Inicio', href: '/home', current: false },
@@ -66,24 +73,30 @@ export default function Navbar() {
                             href={item.href}
                             className={classNames(
                               currentPath === item.href
-                                ? ' text-white w-24 h-10 border-b-8 border-yellow-500'
+                                ? ' text-yellow-500 w-auto h-10 border-b-8 border-yellow-500 text-xl tracking-wider font-snes' // select-bar
                                 : 'text-gray-200 hover:bg-gray-700 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium flex items-center'
                             )}
                             onClick={() => router.push(item.href)} // Use router.push para navegar entre as rotas
                           >
                             {currentPath === item.href ? (
-
-                              <div className="h-28 w-28 -mt-2 -mr-5 -mb-10 -ml-12 float-right">
-                                <img src="fireFlame.gif" alt="GIF Animado" />
+                              <div className=" w-auto -mt-2 -ml-4 float-right left-3">
+                                <Image
+                                  src={coinInfo}
+                                  height={32}
+                                  width={32}
+                                  className="hidden h-8 w-auto lg:block"
+                                  alt="coin info gif"
+                                />
                               </div>
-
-                                ) :(
+                            ) : (
                               <>
                               </>
-                            )}
-                            {item.name}
+                            )}  {/* coin */}
+                           
+                              {item.name} 
                           </a>
+
                         ))}
                       </div>
                     </div>

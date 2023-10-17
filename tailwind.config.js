@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import snes from "/public/font/SnesFont.woff"
 module.exports = {
   darkMode: "class",
   content: [
@@ -10,6 +11,7 @@ module.exports = {
       fontFamily: {
         // burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
+        snes:["Snes", "sans-serif"],
       },
       
       colors: {
